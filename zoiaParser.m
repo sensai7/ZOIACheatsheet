@@ -6,7 +6,7 @@ C = struct2cell(M);
 
 [X Y] = size(C);
 
-result = '<head>\n<link rel="stylesheet" type="text/css" href="theme.css">\n<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">\n</head>\n<body>\n	<div class="header">\n<h1>Empress Effects ZOIA Cheatsheet</h1>\n<p>Up to date version 1.05. By <span href="https://www.reddit.com/user/gonya707">u/gonya707.</span> Based on Empress Effects <span href="https://empresseffects.com/ZOIA-module-index"> Module index</span>. <span href="https://github.com/sensai7/ZOIACheatsheet">Code on Github</span></p>\n</div>\n';
+result = '<head>\n<link rel="stylesheet" type="text/css" href="theme.css">\n<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">\n</head>\n<body>\n	<div class="header">\n<h1>Empress Effects ZOIA Cheatsheet</h1>\n<p>Up to date version 1.05. By <a href="https://www.reddit.com/user/gonya707">u/gonya707.</a> Based on Empress Effects <a href="https://empresseffects.com/ZOIA-module-index"> Module index</a>. <a href="https://github.com/sensai7/ZOIACheatsheet">Code on Github</a></p>\n</div>\n';
 group = '';
 
 for i =1:X
@@ -41,7 +41,7 @@ for i =1:X
     result= strcat(result,'<div id="popup',noSpaces,'" class="overlay">\n<div class="popup">\n<h2>',moduleName,'</h2>\n<a class="close" href="#main">&times;</a>\n<div class="content">',ModuleDesc,'</div>\n</div>\n</div>\n');
     
     %main module
-    result= strcat(result,'<div class="',class,'Module">\n<div class="moduleName">\n<h4><a href="#popup', noSpaces,'">',moduleName,'</a></h4>\n</div>\n<div class="blockGroup">\n');
+    result= strcat(result,'<div class="',class,'Module">\n<div class="moduleName">\n<h4><a class="nodec" href="#popup', noSpaces,'">',moduleName,'</a></h4>\n</div>\n<div class="blockGroup">\n');
     for j = 1:nBlocks
         blockName = strjoin(cellstr(module{1}((j+4),:)));
         switch (blockName(1))
@@ -54,7 +54,7 @@ for i =1:X
             otherwise
                 type = strcat(class,'Fixed');
         end
-        result= strcat(result, '<a class="',type,' block" href="#popup',noSpaces,string(j),'">',blockName,'</a>\n');
+        result= strcat(result, '<a class="nodec',{' '},type,' block" href="#popup',noSpaces,string(j),'">',blockName,'</a>\n');
     end
     result= strcat(result,'</div>\n</div>\n<!--////////////////////////////////////////////////////////////////////////////////////////-->\n');
     
