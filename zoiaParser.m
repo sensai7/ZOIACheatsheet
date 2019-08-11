@@ -6,7 +6,7 @@ C = struct2cell(M);
 
 [X Y] = size(C);
 
-result = '<head>\n<link rel="stylesheet" type="text/css" href="theme.css">\n<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">\n</head>\n<body>\n	<div class="header">\n<h1>Empress Effects ZOIA Cheatsheet</h1>\n<p>Up to date version 1.05. By <a href="https://www.reddit.com/user/gonya707">u/gonya707.</a> Based on Empress Effects <a href="https://empresseffects.com/ZOIA-module-index"> Module index.</a></p>\n</div>\n';
+result = '<head>\n<link rel="stylesheet" type="text/css" href="theme.css">\n<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">\n</head>\n<body>\n	<div class="header">\n<h1>Empress Effects ZOIA Cheatsheet</h1>\n<p>Up to date version 1.05. By <span href="https://www.reddit.com/user/gonya707">u/gonya707.</span> Based on Empress Effects <span href="https://empresseffects.com/ZOIA-module-index"> Module index</span>. <span href="https://github.com/sensai7/ZOIACheatsheet">Code on Github</span></p>\n</div>\n';
 group = '';
 
 for i =1:X
