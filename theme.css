@@ -1,0 +1,224 @@
+
+.interfaceModule{
+	display: inline-block;
+	background-color: #95b3d7;
+	margin-bottom: 5px;
+	border-radius: 15px;
+}
+.audioModule{
+		display: inline-block;
+	background-color: #e2a1a0;
+	margin-bottom: 5px;
+	border-radius: 15px;
+}
+.controlModule{
+		display: inline-block;
+	background-color: #c0d791;
+	margin-bottom: 5px;
+	border-radius: 15px;
+}
+.analysisModule{
+		display: inline-block;
+	background-color: #a999d5;
+	margin-bottom: 5px;
+	border-radius: 15px;
+}
+.effectModule{
+		display: inline-block;
+	background-color: #f7da87;
+	margin-bottom: 5px;
+	border-radius: 15px;
+}
+
+.block{
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display: inline-block;
+	line-height: 100px;
+	border-radius: 15px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+.moduleName{
+	text-align: center;
+}
+
+.LegendWrapper{
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.legend{
+	display: inline-block;
+	width: 200px;
+	height: 40px;
+	border-radius:10px;
+	padding:3; 
+	line-height: 40px;
+	text-align: center;
+}
+
+
+.InterfaceOptional{
+	background-color: #75a3d9;
+}
+.InterfaceFixed{
+	background-color: #3e85da;
+}
+.interfaceModules{
+	background-color: #b8cce4;
+}
+
+.audioOptional{
+	background-color: #e68885;
+}
+.audioFixed{
+	background-color: #e64c48;
+}
+.audioModules{
+  background-color: #e5b8b7;
+}
+
+.controlOptional{
+	background-color: #c4e189;
+}
+.controlFixed{
+	background-color: #b0de53;
+}
+.controlModules{
+  background-color: #d6e3bc;
+}
+
+.analysisOptional{
+	background-color: #9074d7;
+}
+.analysisFixed{
+	background-color: #724bd7;
+}
+.analysisModules{
+  background-color: #b4a7d6;
+}
+
+.effectOptional{
+	background-color: #f0ce6b;
+}
+.effectFixed{
+	background-color: #d8b03b;
+}
+.effectModules{
+  background-color: #ffe599;
+}
+
+.extra{
+	background-color: #d1d1d1;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-size: cover;
+  height: 100vh;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
