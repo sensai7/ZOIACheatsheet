@@ -6,7 +6,7 @@ C = struct2cell(M);
 
 [X Y] = size(C);
 
-result = '<head>\n<link rel="stylesheet" type="text/css" href="theme.css">\n<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">\n</head>\n<body>\n	<div class="header">\n<h1>Empress Effects ZOIA Cheatsheet</h1>\n<p>Up to date version 1.05. By <a href="https://www.reddit.com/user/gonya707">u/gonya707.</a> Based on Empress Effects <a href="https://empresseffects.com/ZOIA-module-index"> Module index</a>. <a href="https://github.com/sensai7/ZOIACheatsheet">Code on Github</a></p>\n</div>\n';
+result = '<head>\n<link rel="stylesheet" type="text/css" href="theme.css">\n<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">\n<script type="application/javascript" src="stuff.js"></script>\n</head>\n<body>\n	<div class="header">\n<h1>Empress Effects ZOIA Cheatsheet</h1>\n<p>Up to date version 1.05. By <a href="https://www.reddit.com/user/gonya707">u/gonya707.</a> Based on Empress Effects <a href="https://empresseffects.com/ZOIA-module-index"> Module index</a>. <a href="https://github.com/sensai7/ZOIACheatsheet">Code on Github</a></p>\n</div>\n';
 group = '';
 
 for i =1:X
@@ -23,7 +23,7 @@ for i =1:X
         end
         capClass = class;
         capClass(1) = capClass(1)-32;
-        result = strcat(result, '\n<div class="moduleGroup',{' '}, capClass, 'Modules">\n<div class="moduleGroupName">\n<h2>',class, ' Modules</h2>\n</div>\n<div class="LegendWrapper">\n<div class="legend ',{' '}, class, 'Fixed">Required block</div>\n<div class="legend ',{' '}, class, 'Optional">Optional block</div>\n<div class="legend extra">Extra settings</div>\n</div>\n<br/>\n<!--////////////////////////////////////////////////////////////////////////////////////////-->\n');
+        result = strcat(result, '\n<div class="moduleGroup',{' '}, capClass, 'Modules">\n<div class="moduleGroupName">\n<h2>',class, ' Modules</h2>\n</div>\n<div class="LegendWrapper">\n<div class="legend ',{' '}, class, 'Fixed">Required block</div>\n<div class="legend ',{' '}, class, 'Optional">Optional block</div>\n<div class="legend legendExtra" onclick="hideShow(''extra'');">Extra settings (Click to hide/show)</div>\n</div>\n<br/>\n<!--////////////////////////////////////////////////////////////////////////////////////////-->\n');
         group = class;
     end
     %popups

@@ -115,6 +115,12 @@
 	background-color: #d1d1d1;
 }
 
+.legendExtra{
+  background-color: #d1d1d1;
+  width: 400px;
+  cursor: pointer;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   background-size: cover;
